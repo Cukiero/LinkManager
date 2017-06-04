@@ -71,9 +71,9 @@ public class BazaDanych {
     }
 
     public static Connection getConnection() throws SQLException {//ustawienie polaczenia z baza danych
-        String url = "jdbc:mysql://45.77.55.209:3306/zarzadzanie";
+        String url = "";
         Properties prop = new Properties();
-        prop.setProperty("user", "piopio");
+        prop.setProperty("", "");
         prop.setProperty("password", "pw");
         Driver d = new com.mysql.jdbc.Driver();
         Connection con = (Connection) d.connect(url, prop);
